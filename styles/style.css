@@ -11,13 +11,13 @@ html {
 .page {
   display: flex;
   align-items: center;
-  inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -41,10 +41,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 } 
@@ -71,8 +71,8 @@ ol {
 }
 
 .content__details {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .result {
@@ -87,9 +87,9 @@ ol {
 
 .content__list-container {
   height: 298px;
-  overflow-y: auto;
-  overflow-x: hidden;
   padding: 0px 7px 2px 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .result__video-container {
@@ -99,9 +99,9 @@ ol {
 }
 
 .result__video {
-  object-fit: cover;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .content__list {
@@ -112,13 +112,13 @@ ol {
 
 .content__video-card {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .content__video-card-thumbnail {
-  height: 103px;
   min-width: 194px;
+  height: 103px;
   object-fit: contain;
   object-position: right;
 }
@@ -130,15 +130,15 @@ ol {
 
 .search-form__fieldset-title {
   font-family: 'Fira Sans Condensed';
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
 }
 
 .title {
+  padding-bottom: 26px;
   font-family: Oswald;
   font-size: 75px;
   line-height: 94%;
-  padding-bottom: 26px;
   text-transform: uppercase;
 }
 
@@ -177,30 +177,30 @@ ol {
 
 
 .content__video-card-title {
+  padding-bottom: 6px;
+  overflow: hidden;
   font-family: Oswald;
   font-size: 30px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   text-transform: uppercase;
-  padding-bottom: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__card-link:hover .content__video-card-title {
   text-decoration: 2px underline #fff;
-  text-underline-offset: 4px;
   text-decoration-skip-ink:none;
+  text-underline-offset: 4px;
 }
 
 .content__video-card-description {
-  display: -webkit-box;
+  display: -webkit-box;  
+  overflow: hidden;
   font-family: 'Fira Sans Condensed';
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 16.2px;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
+  -webkit-box-orient: vertical;
 }
 
 .content__card-link:hover .content__video-card-description {
@@ -222,22 +222,22 @@ ol {
 .search-form__label {
   display: flex;
   align-items: center;
-  width: fit-content;
   gap:5px;
-  cursor: pointer
+  width: fit-content;
+  cursor: pointer;
 }
 
 .search-form__textfield {
-  font-family: 'Fira Sans Condensed';
-  font-size: 18px;
-  color: #fff;
-  background-color: transparent;
-  appearance: none;
+  width: 225px;
+  height: 27px;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  width: 225px;
-  height: 27px;
+  color: #fff;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  background-color: transparent;
+  appearance: none;
 }
 
 .search-form__textfield:focus {
@@ -254,8 +254,8 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  height: 19px;
   width: 19px;
+  height: 19px;
   border: 1px solid #fff;
   padding: 1px;
 }
@@ -263,10 +263,10 @@ ol {
 .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
-  background-color: #fff;
-  height: 100%;
   width: 100%;
+  height: 100%;
   opacity: 0;
+  background-color: #fff;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -278,19 +278,19 @@ ol {
 }
 
 .button {
+  height: 34px;
+  border: 1px solid #fff;
   color: #fff;
-  background-color: transparent;
   font-family: 'Fira Sans Condensed';
   font-size: 18px;
-  border: 1px solid #fff;
-  height: 34px;
+  background-color: transparent;
+  cursor: pointer;
   appearance: none;
-  cursor: pointer
 }
 
 .search-form__submit-button {
-  width: 194px;
   align-self: center;
+  width: 194px;
 }
 
 .more-button{
